@@ -1,6 +1,6 @@
-Directory Lister - The simple PHP directory lister
+Material Directory Lister - The simple PHP directory lister with material looks
 ==================================================
-Created by, [Chris Kankiewicz](http://www.ChrisKankiewicz.com)
+Originally created by [Chris Kankiewicz](http://www.ChrisKankiewicz.com), material changes by [İhsan Işık](https://github.com/xiprox).
 
 
 Introduction
@@ -71,3 +71,4 @@ License
 Directory Lister is distributed under the terms of the
 [MIT License](http://www.opensource.org/licenses/mit-license.php).
 Copyright 2015 [Chris Kankiewicz](http://www.chriskankiewicz.com)
+Copyright 2016 İhsan Işık
