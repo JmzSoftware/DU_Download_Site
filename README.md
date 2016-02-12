@@ -3,18 +3,12 @@ Material Directory Lister - The simple PHP directory lister with material looks
 Originally created by [Chris Kankiewicz](http://www.ChrisKankiewicz.com), material changes by [İhsan Işık](https://github.com/xiprox).
 
 
-Introduction
-------------
-
 Directory Lister is a simple PHP script that lists the contents of any web-accessable directory and
 allows navigating there within. Simply upload Directory Lister to any directory and get immediate
 access to all files and sub-direcories under that directory. Directory Lister is written in PHP and
 distributed under the [MIT License](http://www.opensource.org/licenses/mit-license.php).
 
-Like this project? Want to keep it free? [Make a donation](https://cash.me/$ChrisKankiewicz).
-
-More info available at <http://www.directorylister.com>
-
+![screen shot 2016-02-12 at 3 41 06 pm](https://cloud.githubusercontent.com/assets/2550945/13009870/0db8e100-d19f-11e5-8e4b-bee08914c29d.png)
 
 Features
 --------
@@ -50,8 +44,6 @@ Verify that you have PHP 5.3 or later installed. You can verify your PHP version
     php --version
 
 
-
-
 Contact Info
 ------------
 
@@ -72,3 +64,10 @@ Directory Lister is distributed under the terms of the
 [MIT License](http://www.opensource.org/licenses/mit-license.php).
 Copyright 2015 [Chris Kankiewicz](http://www.chriskankiewicz.com)
 Copyright 2016 İhsan Işık
+
+
+------------
+
+Like this project? Want to keep it free? [Make a donation](https://cash.me/$ChrisKankiewicz).
+
+More info available at <http://www.directorylister.com>
