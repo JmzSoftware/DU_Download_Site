@@ -9,7 +9,6 @@
 
         <!-- STYLES -->
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="<?php echo THEMEPATH; ?>/css/style.css">
 
         <!-- SCRIPTS -->
@@ -19,6 +18,7 @@
 
         <!-- FONTS -->
         <link href='https://fonts.googleapis.com/css?family=Roboto:400,500|Roboto+Mono' rel='stylesheet' type='text/css'>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
         <!-- META -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -51,7 +51,7 @@
                     <ul id="page-top-nav" class="nav navbar-nav">
                         <li>
                             <a href="javascript:void(0)" id="page-top-link">
-                                <i class="fa fa-arrow-circle-up fa-lg"></i>
+                                <i class="material-icons">arrow_upward</i>
                             </a>
                         </li>
                     </ul>
@@ -60,7 +60,7 @@
                         <ul id="page-top-download-all" class="nav navbar-nav">
                             <li>
                                 <a href="?zip=<?php echo $lister->getDirectoryPath(); ?>" id="download-all-link">
-                                    <i class="fa fa-download fa-lg"></i>
+                                    <i class="material-icons md-48">file_download</i>
                                 </a>
                             </li>
                         </ul>
@@ -101,7 +101,7 @@
 
                             <div class="row">
                                 <span class="file-name col-md-7 col-sm-6 col-xs-9">
-                                    <i class="fa <?php echo $fileInfo['icon_class']; ?> fa-fw"></i>
+                                    <i class="material-icons" style="font-size: 20px;"><?php echo $fileInfo['icon_class'] === 'fa-file' ? 'description' : 'folder' ?></i>
                                     <?php echo $name; ?>
                                 </span>
 
@@ -119,7 +119,7 @@
                         <?php if (is_file($fileInfo['file_path'])): ?>
 
                             <a href="javascript:void(0)" class="file-info-button">
-                                <i class="fa fa-info-circle"></i>
+                                <i class="material-icons" style="font-size: 20px">info</i>
                             </a>
 
                         <?php else: ?>
@@ -127,7 +127,7 @@
                             <?php if ($lister->containsIndex($fileInfo['file_path'])): ?>
 
                                 <a href="<?php echo $fileInfo['file_path']; ?>" class="web-link-button" <?php if($lister->externalLinksNewWindow()): ?>target="_blank"<?php endif; ?>>
-                                    <i class="fa fa-external-link"></i>
+                                    <i class="material-icons" style="font-size: 20px">launch</i>
                                 </a>
 
                             <?php endif; ?>
