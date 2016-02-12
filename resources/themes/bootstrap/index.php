@@ -30,114 +30,118 @@
 
     <body>
 
-        <div id="page-navbar" class="navbar navbar-default navbar-fixed-top">
-            <div class="container">
+        <div class="wrapper">
+            <div id="page-navbar" class="navbar navbar-default navbar-fixed-top">
+                <div class="container">
 
-                <?php $breadcrumbs = $lister->listBreadcrumbs(); ?>
+                    <?php $breadcrumbs = $lister->listBreadcrumbs(); ?>
 
-                <p class="navbar-text">
-                    <?php foreach($breadcrumbs as $breadcrumb): ?>
-                        <?php if ($breadcrumb != end($breadcrumbs)): ?>
-                                <a href="<?php echo $breadcrumb['link']; ?>"><?php echo $breadcrumb['text']; ?></a>
-                                <span class="divider">/</span>
-                        <?php else: ?>
-                            <?php echo $breadcrumb['text']; ?>
-                        <?php endif; ?>
-                    <?php endforeach; ?>
-                </p>
+                    <p class="navbar-text">
+                        <?php foreach($breadcrumbs as $breadcrumb): ?>
+                            <?php if ($breadcrumb != end($breadcrumbs)): ?>
+                                    <a href="<?php echo $breadcrumb['link']; ?>"><?php echo $breadcrumb['text']; ?></a>
+                                    <span class="divider">/</span>
+                            <?php else: ?>
+                                <?php echo $breadcrumb['text']; ?>
+                            <?php endif; ?>
+                        <?php endforeach; ?>
+                    </p>
 
-                <div class="navbar-right">
+                    <div class="navbar-right">
 
-                    <ul id="page-top-nav" class="nav navbar-nav">
-                        <li>
-                            <a href="javascript:void(0)" id="page-top-link">
-                                <i class="material-icons">arrow_upward</i>
-                            </a>
-                        </li>
-                    </ul>
-
-                    <?php  if ($lister->isZipEnabled()): ?>
-                        <ul id="page-top-download-all" class="nav navbar-nav">
+                        <ul id="page-top-nav" class="nav navbar-nav">
                             <li>
-                                <a href="?zip=<?php echo $lister->getDirectoryPath(); ?>" id="download-all-link">
-                                    <i class="material-icons md-48">file_download</i>
+                                <a href="javascript:void(0)" id="page-top-link">
+                                    <i class="material-icons">arrow_upward</i>
                                 </a>
                             </li>
                         </ul>
-                    <?php endif; ?>
 
-                </div>
+                        <?php  if ($lister->isZipEnabled()): ?>
+                            <ul id="page-top-download-all" class="nav navbar-nav">
+                                <li>
+                                    <a href="?zip=<?php echo $lister->getDirectoryPath(); ?>" id="download-all-link">
+                                        <i class="material-icons md-48">file_download</i>
+                                    </a>
+                                </li>
+                            </ul>
+                        <?php endif; ?>
 
-            </div>
-        </div>
-
-        <div id="page-content" class="container">
-
-            <?php file_exists('header.php') ? include('header.php') : include($lister->getThemePath(true) . "/default_header.php"); ?>
-
-            <?php if($lister->getSystemMessages()): ?>
-                <?php foreach ($lister->getSystemMessages() as $message): ?>
-                    <div class="alert alert-<?php echo $message['type']; ?>">
-                        <?php echo $message['text']; ?>
-                        <a class="close" data-dismiss="alert" href="#">&times;</a>
                     </div>
-                <?php endforeach; ?>
-            <?php endif; ?>
 
-            <div id="directory-list-header">
-                <div class="row">
-                    <div class="col-md-7 col-sm-6 col-xs-10">File</div>
-                    <div class="col-md-2 col-sm-2 col-xs-2 text-right">Size</div>
-                    <div class="col-md-3 col-sm-4 hidden-xs text-right">Last Modified</div>
                 </div>
             </div>
 
-            <ul id="directory-listing" class="nav nav-pills nav-stacked">
+            <div id="page-content" class="container">
 
-                <?php foreach($dirArray as $name => $fileInfo): ?>
-                    <li data-name="<?php echo $name; ?>" data-href="<?php echo $fileInfo['url_path']; ?>">
-                        <a href="<?php echo $fileInfo['url_path']; ?>" class="clearfix" data-name="<?php echo $name; ?>">
+                <?php file_exists('header.php') ? include('header.php') : include($lister->getThemePath(true) . "/default_header.php"); ?>
+
+                <?php if($lister->getSystemMessages()): ?>
+                    <?php foreach ($lister->getSystemMessages() as $message): ?>
+                        <div class="alert alert-<?php echo $message['type']; ?>">
+                            <?php echo $message['text']; ?>
+                            <a class="close" data-dismiss="alert" href="#">&times;</a>
+                        </div>
+                    <?php endforeach; ?>
+                <?php endif; ?>
+
+                <div id="directory-list-header">
+                    <div class="row">
+                        <div class="col-md-7 col-sm-6 col-xs-10">File</div>
+                        <div class="col-md-2 col-sm-2 col-xs-2 text-right">Size</div>
+                        <div class="col-md-3 col-sm-4 hidden-xs text-right">Last Modified</div>
+                    </div>
+                </div>
+
+                <ul id="directory-listing" class="nav nav-pills nav-stacked">
+
+                    <?php foreach($dirArray as $name => $fileInfo): ?>
+                        <li data-name="<?php echo $name; ?>" data-href="<?php echo $fileInfo['url_path']; ?>">
+                            <a href="<?php echo $fileInfo['url_path']; ?>" class="clearfix" data-name="<?php echo $name; ?>">
 
 
-                            <div class="row">
-                                <span class="file-name col-md-7 col-sm-6 col-xs-9">
-                                    <i class="material-icons" style="font-size: 20px;"><?php echo $fileInfo['icon_class'] === 'fa-file' ? 'description' : 'folder' ?></i>
-                                    <?php echo $name; ?>
-                                </span>
+                                <div class="row">
+                                    <span class="file-name col-md-7 col-sm-6 col-xs-9">
+                                        <i class="material-icons" style="font-size: 20px;"><?php echo $fileInfo['icon_class'] === 'fa-file' ? 'description' : 'folder' ?></i>
+                                        <?php echo $name; ?>
+                                    </span>
 
-                                <span class="file-size col-md-2 col-sm-2 col-xs-3 text-right">
-                                    <?php echo $fileInfo['file_size']; ?>
-                                </span>
+                                    <span class="file-size col-md-2 col-sm-2 col-xs-3 text-right">
+                                        <?php echo $fileInfo['file_size']; ?>
+                                    </span>
 
-                                <span class="file-modified col-md-3 col-sm-4 hidden-xs text-right">
-                                    <?php echo $fileInfo['mod_time']; ?>
-                                </span>
-                            </div>
+                                    <span class="file-modified col-md-3 col-sm-4 hidden-xs text-right">
+                                        <?php echo $fileInfo['mod_time']; ?>
+                                    </span>
+                                </div>
 
-                        </a>
-
-                        <?php if (is_file($fileInfo['file_path'])): ?>
-
-                            <a href="javascript:void(0)" class="file-info-button">
-                                <i class="material-icons" style="font-size: 20px">info</i>
                             </a>
 
-                        <?php else: ?>
+                            <?php if (is_file($fileInfo['file_path'])): ?>
 
-                            <?php if ($lister->containsIndex($fileInfo['file_path'])): ?>
-
-                                <a href="<?php echo $fileInfo['file_path']; ?>" class="web-link-button" <?php if($lister->externalLinksNewWindow()): ?>target="_blank"<?php endif; ?>>
-                                    <i class="material-icons" style="font-size: 20px">launch</i>
+                                <a href="javascript:void(0)" class="file-info-button">
+                                    <i class="material-icons" style="font-size: 20px">info</i>
                                 </a>
+
+                            <?php else: ?>
+
+                                <?php if ($lister->containsIndex($fileInfo['file_path'])): ?>
+
+                                    <a href="<?php echo $fileInfo['file_path']; ?>" class="web-link-button" <?php if($lister->externalLinksNewWindow()): ?>target="_blank"<?php endif; ?>>
+                                        <i class="material-icons" style="font-size: 20px">launch</i>
+                                    </a>
+
+                                <?php endif; ?>
 
                             <?php endif; ?>
 
-                        <?php endif; ?>
+                        </li>
+                    <?php endforeach; ?>
 
-                    </li>
-                <?php endforeach; ?>
-
-            </ul>
+                </ul>
+            </div>
+            
+            <div class="push"></div>
         </div>
 
         <?php file_exists('footer.php') ? include('footer.php') : include($lister->getThemePath(true) . "/default_footer.php"); ?>
