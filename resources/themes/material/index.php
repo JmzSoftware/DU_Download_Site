@@ -102,7 +102,7 @@
 
                                 <div class="row">
                                     <span class="file-name col-md-7 col-sm-6 col-xs-9">
-                                        <i class="material-icons" style="font-size: 20px;"><?php echo $fileInfo['icon_class'] === 'fa-file' ? 'description' : 'folder' ?></i>
+                                        <i class="material-icons" style="font-size: 20px;"><?php echo $fileInfo['icon_class'] === 'fa-folder' ? 'folder' : 'description'; ?></i>
                                         <?php echo $name; ?>
                                     </span>
 
