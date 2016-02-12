@@ -6,7 +6,7 @@ return array(
     'hide_dot_files'            => true,
     'list_folders_first'        => true,
     'list_sort_order'           => 'natcasesort',
-    'theme_name'                => 'bootstrap',
+    'theme_name'                => 'material',
     'external_links_new_window' => true,
 
     // Hidden files
