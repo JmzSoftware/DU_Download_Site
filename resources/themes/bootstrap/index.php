@@ -52,7 +52,7 @@
                         <ul id="page-top-nav" class="nav navbar-nav">
                             <li>
                                 <a href="javascript:void(0)" id="page-top-link">
-                                    <i class="material-icons">arrow_upward</i>
+                                    <i class="material-icons" style="font-size: 20px">arrow_upward</i>
                                 </a>
                             </li>
                         </ul>
@@ -61,7 +61,7 @@
                             <ul id="page-top-download-all" class="nav navbar-nav">
                                 <li>
                                     <a href="?zip=<?php echo $lister->getDirectoryPath(); ?>" id="download-all-link">
-                                        <i class="material-icons md-48">file_download</i>
+                                        <i class="material-icons" style="font-size: 20px">file_download</i>
                                     </a>
                                 </li>
                             </ul>
@@ -140,7 +140,7 @@
 
                 </ul>
             </div>
-            
+
             <div class="push"></div>
         </div>
 
