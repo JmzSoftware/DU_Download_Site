@@ -18,7 +18,7 @@
         <script type="text/javascript" src="<?php echo THEMEPATH; ?>/js/directorylister.js"></script>
 
         <!-- FONTS -->
-        <link rel="stylesheet" type="text/css"  href="//fonts.googleapis.com/css?family=Cutive+Mono">
+        <link href='https://fonts.googleapis.com/css?family=Roboto:400,500|Roboto+Mono' rel='stylesheet' type='text/css'>
 
         <!-- META -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
