@@ -1,5 +1,4 @@
 <br><br>
-<center>
 <img src="https://i.imgur.com/shV4gfj.png" style='width:90%;' border="0" alt="Null">
 <br><br>
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -12,6 +11,5 @@
 <script>
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
-</center>
 <br>
 
