@@ -24,6 +24,12 @@
 	<meta name="msapplication-TileImage" content=<?php echo THEMEPATH; ?>"/img/ms-icon-144x144.png">
 	<meta name="theme-color" content="#ffffff">
 
+	<meta property="og:url" content="https://download.dirtyunicorns.com"/>
+        <meta property="og:title" content="Dirty Unicorns Download"/>
+        <meta property="og:image" content="https://i.imgur.com/shV4gfj.png"/>
+        <meta property="og:description" content="Get all you Dirty Unicorns needs here" />
+        <meta property="og:type" content="website"/>
+
         <!-- STYLES -->
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="<?php echo THEMEPATH; ?>/css/style.css">
