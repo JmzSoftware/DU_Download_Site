@@ -77,6 +77,11 @@ a:active {
 /* -----| DIRECTORY LISTER |--------------------------------------------------------------------- */
 /* ---------------------------------------------------------------------------------------------- */
 
+#page-content {
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
 #directory-list-header {
     font-family: 'Roboto-Medium', sans-serif;
     font-weight: bold;
