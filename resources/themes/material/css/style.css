@@ -186,8 +186,6 @@ a:active {
     }
 
     #page-navbar .navbar-text {
-        margin-left: 15px;
-        margin-right: 15px;
         max-width: 75%;
     }
 
@@ -195,4 +193,23 @@ a:active {
         display: none !important;
     }
 
+    .file-size {
+        text-align: center !important;
+	padding-right: 0px !important;
+    }
+}
+
+#DirectorLister .fileDownloads {
+    display: inline-block;
+    float: left;
+    margin: 8px;
+    overflow: hidden;
+    text-align: right;
+    white-space: nowrap;
+    width: 100px;
+}
+
+@media (min-width: 992px) {
+.col-md-7 {
+    width: 30%; !important
 }

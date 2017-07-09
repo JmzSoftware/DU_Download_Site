@@ -88,8 +88,9 @@
                 <div id="directory-list-header">
                     <div class="row">
                         <div class="col-md-7 col-sm-6 col-xs-10">File</div>
-                        <div class="col-md-2 col-sm-2 col-xs-2 text-right">Size</div>
-                        <div class="col-md-3 col-sm-4 hidden-xs text-right">Last Modified</div>
+                        <div class="col-md-2 col-sm-2 col-xs-2">Size</div>
+			<div class="col-md-2 col-sm-3 hidden-xs">Downloads</div>
+                        <div class="col-md-3 col-sm-3 hidden-xs">Last Modified</div>
                     </div>
                 </div>
 
@@ -97,7 +98,8 @@
 
                     <?php foreach($dirArray as $name => $fileInfo): ?>
                         <li data-name="<?php echo $name; ?>" data-href="<?php echo $fileInfo['url_path']; ?>">
-                            <a href="<?php echo $fileInfo['url_path']; ?>" class="clearfix" data-name="<?php echo $name; ?>">
+			    <a href="<?php if(is_dir($fileInfo['file_path'])) { echo '?dir=' . $fileInfo['file_path']; } elseif($fileInfo['icon_class'] == 'icon-up-dir') { echo  $fileInfo['file_path']; } else { echo 'download.php?file='. $fileInfo['file_path']; } ?>" class="clearfix" data-name="<?php echo $name; ?>">
+
 
 
                                 <div class="row">
@@ -106,11 +108,15 @@
                                         <?php echo $name; ?>
                                     </span>
 
-                                    <span class="file-size col-md-2 col-sm-2 col-xs-3 text-right">
+                                    <span class="file-size col-md-2 col-sm-2 col-xs-3">
                                         <?php echo $fileInfo['file_size']; ?>
                                     </span>
 
-                                    <span class="file-modified col-md-3 col-sm-4 hidden-xs text-right">
+                                    <span class="fileDownloads col-md-2 col-sm-2 hidden-xs">
+					<?php echo $fileInfo['file_downloads']; ?>
+                                    </span>
+
+                                    <span class="file-modified col-md-3 col-sm-3 hidden-xs">
                                         <?php echo $fileInfo['mod_time']; ?>
                                     </span>
                                 </div>
