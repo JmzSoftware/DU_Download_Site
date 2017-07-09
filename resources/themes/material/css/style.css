@@ -214,3 +214,12 @@ a:active {
 .col-md-7 {
     width: 30%; !important
 }
+
+.modal-content {
+    background: url(/resources/themes/material/img/bg-dark.png) repeat #222 !important;
+    color: #b21b1b;
+}
+
+.modal-header .close {
+    color: white !important;
+}
