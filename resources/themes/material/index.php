@@ -26,7 +26,7 @@
 
 	<meta property="og:url" content="https://download.dirtyunicorns.com"/>
 	<meta property="og:title" content="Dirty Unicorns Download"/>
-	<meta property="og:image" content="http://i.imgur.com/IZck99R.png"/>
+	<meta property="og:image" content="https://i.imgur.com/IZck99R.png"/>
 	<meta property="og:description" content="Get all you Dirty Unicorns needs here" />
 	<meta property="og:type" content="website"/>
 
