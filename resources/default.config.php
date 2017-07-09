@@ -17,7 +17,11 @@ return array(
         'resources/*',
         'analytics.inc',
         'header.php',
-        'footer.php'
+        'footer.php',
+	'download.php',
+	'COPYING',
+	'README.md',
+	'json.php'
     ),
 
     // Files that, if present in a directory, make the directory
