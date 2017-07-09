@@ -630,7 +630,7 @@ class DirectoryLister {
                             'file_size'  => '-',
 			    'file_downloads' => '-',
                             'mod_time'   => date('Y-m-d', filemtime($realPath)),
-                            'icon_class' => 'fa-level-up',
+                            'icon_class' => 'icon-up-dir',
                             'sort'       => 0
                         );
                     }
