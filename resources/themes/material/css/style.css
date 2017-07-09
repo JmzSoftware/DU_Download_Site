@@ -30,7 +30,7 @@ a {
 }
 
 a:hover {
-    color: #616161;
+    color: #ffffff;
 }
 
 a:active {
@@ -92,7 +92,7 @@ a:active {
 }
 
 #directory-listing li > a:hover {
-    background-color: #E0F2F1;
+    background-color: #181818;
 }
 
 .file-name {
@@ -210,6 +210,11 @@ a:active {
     width: 100px;
 }
 
+@media (min-width: 992px) {
+.col-md-7 {
+    width: 30%; !important
+}
+
 .modal-content {
     background: url(/resources/themes/material/img/bg-dark.png) repeat #222 !important;
     color: #b21b1b;
@@ -241,3 +246,4 @@ a:active {
 .file-info-button, .web-link-button {
     margin-left: 80%;
 }
+

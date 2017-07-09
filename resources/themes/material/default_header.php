@@ -1,5 +1,5 @@
 <br><br>
-<img src="http://i.imgur.com/IZck99R.png" style='width:90%;' border="0" alt="Null">
+<img src="http://i.imgur.com/IZck99R.png" style='width:80%;' border="0" alt="Null">
 <br><br>
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <!-- DU Downloads -->
