@@ -474,6 +474,20 @@ class DirectoryLister {
         return true;
     }
 
+    /**
+     * Get total download count.
+     *
+     * @return download number
+     * @access public
+     */
+    public function getTotalDownloads() {
+        // Get fresh download count data
+        $dllog = $this->_read_log();
+
+        // Get total download count
+        $totaldls = array_sum($dllog);
+        return $totaldls;
+    }
 
     /**
      * Validates and returns the directory path
