@@ -14,7 +14,8 @@ body {
     height: 100%;
     padding: 70px 0 0;
     color: #ddd;
-    background: url(/resources/themes/material/img/bg-dark.png) repeat #222 !important;
+    background-color: #1a1a1a;
+
 }
 
 body.breadcrumb-fixed {
@@ -245,7 +246,7 @@ a:active {
     .col-md-2 {
         width: 11.666667%;
     }
-} 
+}
 
 
 .file-info-button, .web-link-button {
