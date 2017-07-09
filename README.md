@@ -1,73 +1,34 @@
-Material Directory Lister - The simple PHP directory lister with material looks
-==================================================
-Originally created by [Chris Kankiewicz](http://www.ChrisKankiewicz.com), material changes by [İhsan Işık](https://github.com/xiprox).
+Dirty Unicorns Download Site
+===================
 
+Just a simple download PHP script customized for Dirty Unicorns.
 
-Directory Lister is a simple PHP script that lists the contents of any web-accessable directory and
+Directory Lister is a simple PHP script that lists the contents of any web-accessible directory and
 allows navigating there within. Simply upload Directory Lister to any directory and get immediate
 access to all files and sub-direcories under that directory. Directory Lister is written in PHP and
 distributed under the [MIT License](http://www.opensource.org/licenses/mit-license.php).
 
-![screen shot 2016-02-12 at 3 41 06 pm](https://cloud.githubusercontent.com/assets/2550945/13009870/0db8e100-d19f-11e5-8e4b-bee08914c29d.png)
+----------
 
-Features
---------
+> **Features:**
+> - Extremely simple installation
+> - Creates on-the-fly listing of any web-accessible directory
+> - Customizable sort order of files/folders
+> - Counts downloads
+> - Easily define hidden files to be excluded from the listing
 
-  * Extremely simple installation
-  * Creates on-the-fly listing of any web-accessable directory
-  * Custimizable sort order of files/folders
-  * Easily define hidden files to be excluded from the listing
+----------
 
-
-Requirements
-------------
-
-Directory Lister requires PHP 5.3+ to work properly.  For more information on PHP, please visit
-<http://www.php.net>.
-
-
-Installation
-------------
-
-  1. Copy `resources/default.config.php` to `resources/config.php`
-  2. Upload `index.php` and the `resources` folder to the folder you want listed
-  3. Upload additional files to the same directory as index.php
-
-
-Troubleshooting
----------------
-
-Ensure you have the latest version of Directory Lister installed.
-
-Verify that you have PHP 5.3 or later installed. You can verify your PHP version by running:
-
-    php --version
-
-
-Contact Info
-------------
-
-Contact us via our mailling list at [Directory-Lister@GoogleGroups.com](mailto:Directory-Lister@GoogleGroups.com)
-or [join our Google Group](https://groups.google.com/forum/?fromgroups#!forum/directory-lister) online.
-
-Follow Directory Lister on Twitter at [@DirectoryLister](https://twitter.com/directorylister) or
-follow the developer at [@PHLAK](https://twitter.com/PHLAK)
-
-Find a problem or bug with Directory Lister?
-[Open an issue](https://github.com/DirectoryLister/DirectoryLister/issues) on GitHub.
-
+> **How to install:**
+> - Copy resources/default.config.php to resources/config.php
+> - Upload index.php and the resources folder to the folder you want listed
+> - Upload additional files to the same directory as index.php
+> - chmod 777 resources/log
 
 License
 -------
 
-Directory Lister is distributed under the terms of the
-[MIT License](http://www.opensource.org/licenses/mit-license.php).
+Directory Lister is distributed under the terms of the [MIT License](http://www.opensource.org/licenses/mit-license.php).
 Copyright 2015 [Chris Kankiewicz](http://www.chriskankiewicz.com)
 Copyright 2016 İhsan Işık
-
-
-------------
-
-Like this project? Want to keep it free? [Make a donation](https://cash.me/$ChrisKankiewicz).
-
-More info available at <http://www.directorylister.com>
+Copyright 2017 Dirty Unicorns
