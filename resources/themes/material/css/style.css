@@ -223,7 +223,7 @@ a:active {
 }
 
 .modal-content {
-    background: url(/resources/themes/material/img/bg-dark.png) repeat #222 !important;
+    background-color: #1a1a1a;
     color: #b21b1b;
 }
 
